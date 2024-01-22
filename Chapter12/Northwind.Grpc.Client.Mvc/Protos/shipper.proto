@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Northwind.Grpc.Client.Mvc";
+
+package shipper;
+
+// The shipper service definition.
+service Shipper {
+	// Gets a shipper product
+	rpc GetShipper (ShipperRequest) returns (ShipperReply);
+}
+
+// The request message containing the shiper's ID.
+message ShipperRequest {
+	int32 shipperId = 1;
+}
+
+// The response message containing the shipper product.
+message ShipperReply {
+	int32 shipperId = 1;
+	string companyName = 2;
+	string phone = 3;
+}

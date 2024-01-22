@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Northwind.Grpc.Service.Protos";
+
+package shipper;
+
+service Product {
+	rpc GetAlphabeticalListOfProducts (google.protobuf.Empty) returns (ProductsReply) {
+		option (google.api.http) = {
+			get: "/v1/product"
+		};
+	}
+}
+
+message ProductsReply {
+	repeated ProductReply product = 1;
+}
+
+message ProductReply {
+
+	int32 ProductId = 1;
+	string ProductName = 2;
+	string CategoryName = 3;
+	bool Discontinued = 4;
+	optional uint64 UnitPrice = 5;
+}

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.CosmosDb.SqlApi", "Northwind.CosmosDb.SqlApi\Northwind.CosmosDb.SqlApi.csproj", "{B4BFFBFD-9452-481C-A5E0-735816DE8E3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.DataContext.SqlServer", "..\Chapter02\Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{C7DE0CF9-B49E-4C0E-9706-12EBC604DDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.CosmosDb.Gremlin", "Northwind.CosmosDb.Gremlin\Northwind.CosmosDb.Gremlin.csproj", "{7E42E59B-38CE-464F-9304-F67CD662A225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4BFFBFD-9452-481C-A5E0-735816DE8E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BFFBFD-9452-481C-A5E0-735816DE8E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BFFBFD-9452-481C-A5E0-735816DE8E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BFFBFD-9452-481C-A5E0-735816DE8E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DE0CF9-B49E-4C0E-9706-12EBC604DDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DE0CF9-B49E-4C0E-9706-12EBC604DDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DE0CF9-B49E-4C0E-9706-12EBC604DDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DE0CF9-B49E-4C0E-9706-12EBC604DDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E42E59B-38CE-464F-9304-F67CD662A225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E42E59B-38CE-464F-9304-F67CD662A225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E42E59B-38CE-464F-9304-F67CD662A225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E42E59B-38CE-464F-9304-F67CD662A225}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BF45065-7FB0-45E6-99FD-56442CF38DEC}
+	EndGlobalSection
+EndGlobal

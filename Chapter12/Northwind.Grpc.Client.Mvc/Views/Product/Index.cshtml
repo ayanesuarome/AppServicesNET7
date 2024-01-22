@@ -1,0 +1,34 @@
+﻿@using Northwind.Grpc.Client.Mvc.Models;
+@model IEnumerable<ProductReplyModel>?;
+@{
+    ViewData["Title"] = "Shipper Produts";
+}
+    
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Product Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model is not null)
+            {
+                @foreach (ProductReplyModel p in Model)
+                {
+                    <tr>
+                        <td>
+                            <a href="@(ViewData["baseaddress"])api/products/@p.ProductId">@p.ProductName</a>
+                        </td>
+                        <td>
+                            <p>@p.CategoryName</p>
+                        </td>
+                        <td>
+                            <p>@p.Discontinued</p>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
