@@ -5,7 +5,7 @@ using Northwind.Console.SqlClient;
 SqlConnectionStringBuilder builder = new();
 
 builder.InitialCatalog = "Northwind";
-builder.MultipleActiveResultSets = true;
+builder.MultipleActiveResultSets = false;
 builder.Encrypt = true;
 builder.TrustServerCertificate = true;
 builder.ConnectTimeout = 10;

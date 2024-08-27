@@ -18,7 +18,10 @@ namespace WorkingWithTasks
                     new ArgumentException($"{nameof(input)} parameter is empty."));
             }
 
-            return Task.FromResult(Regex.IsMatch(input, @"^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$"));
+            return Task.FromResult(
+                Regex.IsMatch(
+                    input,
+                    @"^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$"));
         }
 
     }
