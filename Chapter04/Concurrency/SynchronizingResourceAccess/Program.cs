@@ -12,13 +12,20 @@ internal partial class Program
         //Task a = Task.Factory.StartNew(MethodALock);
         //Task b = Task.Factory.StartNew(MethodBLock);
 
-        Task a = Task.Factory.StartNew(MethodAMonitor);
-        Task b = Task.Factory.StartNew(MethodBLock);
+        //Task a = Task.Factory.StartNew(MethodAMonitor);
+        //Task b = Task.Factory.StartNew(MethodBLock);
 
-        Task.WaitAll(new Task[] {a, b});
+        //WriteLine();
+        //WriteLine($"Results: {SharedObjects.Message}.");
+        //WriteLine($"{SharedObjects.Counter} string modifications.");
+
+        BankAccount account = new();
+        account.Deposit(100);
+        
+
         WriteLine();
-        WriteLine($"Results: {SharedObjects.Message}.");
-        WriteLine($"{SharedObjects.Counter} string modifications.");
+        WriteLine($"Balance: {account.Balance}.");
+
         WriteLine($"{watch.ElapsedMilliseconds:N0} elapsed milliseconds.");
     }
 }

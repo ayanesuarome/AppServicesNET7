@@ -3,6 +3,8 @@
 internal partial class Program
 {
     // lock = try { Monitor.Enter(){} } finally { Monitor.Exit() } 
+    // Lock statement does not support asynchronous calls.
+    // Awaiting an asynchronous call inside a lock statement will cause a compilation error.
 
     public static void MethodALock()
     {
