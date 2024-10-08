@@ -5,7 +5,15 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilogging", "Serilogging\Serilogging.csproj", "{402E0FFE-B0F3-4066-A44B-A875D9D13225}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithImages", "WorkingWithImages\WorkingWithImages.csproj", "{5051C11C-36AF-42B2-832A-28E331056870}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithImages", "WorkingWithImages\WorkingWithImages.csproj", "{5051C11C-36AF-42B2-832A-28E331056870}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MappingObjects.Tests", "MappingObjects.Tests\MappingObjects.Tests.csproj", "{59E856E8-945B-4565-B614-F9E753A50CAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MappingObjects", "MappingObjects\MappingObjects.csproj", "{99DB4191-D83A-4FD0-8901-C7932DD1D434}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationDemo", "FluentValidation\FluentValidationDemo.csproj", "{D9192065-9D87-4793-9A68-5A6DC485C804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratingPdf", "GeneratingPdf\GeneratingPdf.csproj", "{0DCADD22-5B46-40BE-BD97-804C77BD574E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{5051C11C-36AF-42B2-832A-28E331056870}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5051C11C-36AF-42B2-832A-28E331056870}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5051C11C-36AF-42B2-832A-28E331056870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E856E8-945B-4565-B614-F9E753A50CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E856E8-945B-4565-B614-F9E753A50CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E856E8-945B-4565-B614-F9E753A50CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E856E8-945B-4565-B614-F9E753A50CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DB4191-D83A-4FD0-8901-C7932DD1D434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DB4191-D83A-4FD0-8901-C7932DD1D434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DB4191-D83A-4FD0-8901-C7932DD1D434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DB4191-D83A-4FD0-8901-C7932DD1D434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9192065-9D87-4793-9A68-5A6DC485C804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9192065-9D87-4793-9A68-5A6DC485C804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9192065-9D87-4793-9A68-5A6DC485C804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9192065-9D87-4793-9A68-5A6DC485C804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DCADD22-5B46-40BE-BD97-804C77BD574E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCADD22-5B46-40BE-BD97-804C77BD574E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCADD22-5B46-40BE-BD97-804C77BD574E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCADD22-5B46-40BE-BD97-804C77BD574E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
