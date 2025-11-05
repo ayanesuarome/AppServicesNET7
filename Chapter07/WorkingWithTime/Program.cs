@@ -109,5 +109,38 @@ internal partial class Program
         WriteLine("Is July 4th daylight saving time? {0}", arg0: independenceDay.IsDaylightSavingTime());
         WriteLine("Is Octuber 26th daylight saving time? {0}", arg0: DateTime.Parse("26 October 2025").IsDaylightSavingTime());
         WriteLine("Is today daylight saving time? {0}", arg0: DateTime.Now.IsDaylightSavingTime());
+
+        WriteLine("");
+
+        SectionTitle("Localizing the DayOfWeek enum");
+        CultureInfo previousCulture = Thread.CurrentThread.CurrentCulture;
+        // explicitly set culture to Danish (Denmark)
+        Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("da-DK");
+
+        WriteLine("Culture: {0}, DayOfWeek: {1}",
+            arg0: Thread.CurrentThread.CurrentCulture.NativeName,
+            arg1: DateTime.Now.DayOfWeek);
+        WriteLine("Culture: {0}, DayOfWeek: {1:dddd}",
+            arg0: Thread.CurrentThread.CurrentCulture.NativeName,
+            arg1: DateTime.Now);
+        WriteLine("Culture: {0}, DayOfWeek: {1}",
+            arg0: Thread.CurrentThread.CurrentCulture.NativeName,
+            arg1: DateTimeFormatInfo.CurrentInfo.GetDayName(DateTime.Now.DayOfWeek));
+
+        Thread.CurrentThread.CurrentCulture = previousCulture;
+
+        WriteLine("");
+
+        SectionTitle("Working with only a date or a time");
+        DateOnly coronation = new(year: 2023, month: 5, day: 6);
+        WriteLine($"The King's Coronation is on {coronation.ToLongDateString()}.");
+        WriteLine($"The King's Coronation is on {coronation.ToShortDateString()}.");
+        TimeOnly starts = new(hour: 11, minute: 30);
+        WriteLine($"The King's Coronation starts at {starts}.");
+        DateTime calendarEntry = coronation.ToDateTime(starts);
+        WriteLine($"Add to your calendar: {calendarEntry}.");
+
+        TimeZoneInfo localZone = TimeZoneInfo.Local;
+        WriteLine($"Local time zone: {localZone.DisplayName}, Standard Name: {localZone.StandardName}, Daylight Name: {localZone.DaylightName}");
     }
 }
