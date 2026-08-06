@@ -13,7 +13,7 @@ internal class Book
     /// <summary>
     /// Gets or sets ISBN.
     /// </summary>
-    required public string ISBN { get; set; }
+    public required string ISBN { get; set; }
 
     /// <summary>
     /// Gets or sets Title.

@@ -4,7 +4,6 @@
 namespace CodeAnalyzing;
 
 using System.Collections.Generic;
-using System.Runtime.InteropServices.JavaScript;
 using CodeAnalyzing.Static_Virtual_Member_Interface;
 
 /// <summary>
@@ -88,10 +87,10 @@ public class Program
         // List patterns
         Debug.WriteLine("List patterns");
         int[] numbers = { 1, 2, 3 };
-        Debug.WriteLine(numbers is[1, 2, 3]);  // True
-        Debug.WriteLine(numbers is[1, 2, 4]);  // False
-        Debug.WriteLine(numbers is[1, 2, 3, 4]);  // False
-        Debug.WriteLine(numbers is[0 or 1, <= 2, >= 3]);  // True
+        Debug.WriteLine(numbers is [1, 2, 3]);  // True
+        Debug.WriteLine(numbers is [1, 2, 4]);  // False
+        Debug.WriteLine(numbers is [1, 2, 3, 4]);  // False
+        Debug.WriteLine(numbers is [0 or 1, <= 2, >= 3]);  // True
 
         int[] arr = new[] { 0, 1, 2, 3 };
         Span<int> intSpan = arr;

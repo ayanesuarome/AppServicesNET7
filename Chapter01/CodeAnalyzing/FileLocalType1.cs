@@ -1,4 +1,9 @@
-﻿namespace CodeAnalyzing
+﻿// <copyright file="FileLocalType1.cs" company="Ayane">
+// Copyright (c) Ayane. All rights reserved.
+// </copyright>
+#nullable enable
+
+namespace CodeAnalyzing
 {
     /// <summary>
     /// Widget class.
